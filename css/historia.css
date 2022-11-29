@@ -1,0 +1,233 @@
+
+
+
+/*Movil*/
+@media (max-width: 767px) {
+    h1, h5{
+        color: white;
+        font-size: 30px;
+        font-family: Impact, sans-serif;
+    }
+
+    video {
+        width: 100%;
+    }
+    
+    .encabezadoHistoria {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .textoDebajoVideo p {
+            margin-left: 15px;
+            font-family: Helvetica, sans-serif;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            line-height:60px;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 50px;
+    }
+    
+    .quienesSomos {
+        background-color: black;
+    }
+    
+    .quienesSomos h5 {
+        padding-left: 20px;
+        font-size: 40px;
+    }
+    
+    .liderazgo h5 {
+        font-size: 30px;
+    }
+    
+    .quienesSomos img {
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 100%;
+        padding-right: 5px;
+        padding-left: 10px;
+        padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .huella p {
+        margin-left: 15px;
+            font-family: Helvetica, sans-serif;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            line-height:60px;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 50px;
+    }
+    
+    .row {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .huella {
+        padding-bottom: 50px;
+    }
+}
+
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 990px) {
+    h1, h5{
+        color: white;
+        font-size: 50px;
+        font-family: Impact, sans-serif;
+    }
+
+    video {
+        width: 100%;
+    }
+    
+    .encabezadoHistoria {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .textoDebajoVideo p {
+            margin-left: 15px;
+            font-family: Helvetica, sans-serif;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            line-height:60px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 50px;
+    }
+    
+    .quienesSomos {
+        background-color: black;
+    }
+    
+    .quienesSomos h5 {
+        padding-left: 20px;
+        font-size: 40px;
+    }
+    
+    .liderazgo h5 {
+        font-size: 40px;
+    }
+    
+    .quienesSomos img {
+        width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .huella p {
+        margin-left: 17px;
+            font-family: Helvetica, sans-serif;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            line-height:60px;
+            padding-left: 20px;
+            padding-right: 20px;
+    }
+    
+    .row {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .huella {
+        padding-bottom: 70px;
+    }
+
+}
+
+/*Escritorio*/
+@media (min-width: 991px){
+    h1, h5{
+        color: white;
+        font-size: 70px;
+        font-family: Impact, sans-serif;
+    }
+
+    video {
+        width: 100%;
+    }
+    
+    .encabezadoHistoria {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .textoDebajoVideo p {
+            margin-left: 17px;
+            font-family: Helvetica, sans-serif;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            line-height:60px;
+            padding-left: 200px;
+            padding-right: 200px;
+            padding-bottom: 50px;
+    }
+    
+    .quienesSomos {
+        background-color: black;
+    }
+    
+    .quienesSomos h5 {
+        padding-left: 50px;
+        font-size: 50px;
+    }
+    
+    .liderazgo h5 {
+        font-size: 50px;
+    }
+    
+    .quienesSomos img {
+        width: 100%;
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .huella p {
+        margin-left: 17px;
+            font-family: Helvetica, sans-serif;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            line-height:60px;
+            padding-left: 200px;
+            padding-right: 200px;
+    }
+    
+    .row {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .huella {
+        padding-bottom: 70px;
+    }
+    
+}
+

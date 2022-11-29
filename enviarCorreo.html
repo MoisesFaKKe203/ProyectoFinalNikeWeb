@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- CSS ESTILO-->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/enviarCorreo.css">
+    <link rel="stylesheet" href="css/EstiloInicio.css">
+    <!-- http://127.0.0.1:5501/ -->
+</head>
+<body>
+    <!-- <div id="wrapper">
+        <h1>Contáctanos</h1>
+        <form action="https://formsubmit.co/bnh74570@gmail.com" method="POST">
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="name">
+
+            <label for="email">Correo Electrónico</label>
+            <input type="email" name="email">
+
+            <label for="subject">Asunto</label>
+            <input type="text" name="subject">
+
+            <label for="comments">Comentarios</label>
+            <textarea name="comments" cols="15" rows="5">
+
+            <input type="submit" value="Enviar">
+        
+            <input type="hidden" name="_next" value="http://127.0.0.1:5501/index.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form> -->
+        <div class="row">
+            <div class="logo col-6 col-md-6 text-center d-none d-md-flex">
+                <a href="index.html">
+                    <img class="w-75"src="/img/nikeLogo.png" alt="">
+                </a>
+            </div>
+        <form class="col-12 col-md-6 align-items-center" id="loginForm" action="https://formsubmit.co/bnh74570@gmail.com" method="POST">
+            
+            <div class="fondo">
+                <h2>Contáctanos</h2>
+                
+                <div class="col-md-12 col-12 text-center">
+                    <label for="Nombre" class="form-label "
+                        style="color:black; font-family: Arial, Helvetica, sans-serif;">Nombre</label>
+                    <input type="text" name="name" class="email form-control" id="emailLog"
+                        placeholder="" required>
+                </div>
+                <div class="col-md-12 col-12 text-center">
+                    <label for="email" class="form-label "
+                        style="color:black; font-family: Arial, Helvetica, sans-serif;">Correo Electrónico</label>
+                    <input type="email" name="email" class="email form-control" id="emailLog"
+                        placeholder="" required>
+                </div>
+                <div class="col-md-12 col-12 text-center">
+                    <label for="subject" class="form-label "
+                        style="color:black; font-family: Arial, Helvetica, sans-serif;">Asunto</label>
+                    <input type="text" name="subject" class="email form-control" id="emailLog"
+                        placeholder="" required>
+                </div>
+                <div class="col-md-12 col-12 text-center">
+                    <label for="comments" class="form-label "
+                        style="color:black; font-family: Arial, Helvetica, sans-serif;">Comentarios</label>
+                    <textarea type="text" name="comments" class="email form-control" id="emailLog"
+                    cols="15" rows="5"></textarea>
+                </div>
+
+                <div class="col-md-12 col-12 botonEnviar">
+                    <input class="enviar"type="submit" value="Enviar">
+                </div>
+        
+            <input type="hidden" name="_next" value="http://127.0.0.1:5501/confirmacionCorreo.html">
+            <input type="hidden" name="_captcha" value="false">
+            </div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>

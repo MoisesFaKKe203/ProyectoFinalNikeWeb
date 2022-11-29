@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- CSS ESTILO-->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/historia.css">
+    <link rel="stylesheet" href="css/catalogo.css">
+</head>
+
+<body>
+    <div class="crud" id="crud"></div>
+    <div class="botonesIniciales text-end d-none d-md-block logged-out">
+        <a href="/Registro.html" class="logged-out">
+                <button>Únete</button>
+        </a>
+        <a href="/InicioSesion.html" class="logged-out">
+                <button>Iniciar sesión</button>
+            </a>
+        <a href="#" class=" botonesIniciales text-end d-none d-md-block logged-in" id="logout">
+            <button class="logged-in">Cerrar sesión</button>
+            </a>
+        </div>
+        <header>
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/index.html">
+                        <img src="/img/nikeLogo.png" class="imgNav">
+                    </a>
+                    <div class="contenedorDerecha order-sm-0 order-md-1" id="enSesion">
+                        <!-- <div class="espacio">
+                        <ul class="navbar-nav text-light">
+                            <div class="buscar margen">
+                                <input type="text" class= "Buscar_texto">
+                                <a href="" class="button" style="float: right"><i class="bi bi-search lupa"></i></a>
+                            </div>
+                        </div>
+                            <div class="espacio enSesion" id="enSesionUser">
+                                <a class="nav-link enSesion" href="#">
+                                    <i class="iconosNav bi-person-fill enSesion" id="enSesion"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="espacio enSesion" id="enSesionCora">
+                             <div class="nav-item col-12 col-md-auto"> 
+                                 <a class="nav-link enSesion" href="#">
+                                    <i class="iconosNav bi-heart-fill enSesion" id="enSesion"></i>
+                                </a> 
+                            </div>
+                        </ul>
+                    </div> -->
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="menu">
+                        
+                        <ul class="menuP navbar-nav mx-auto">
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" href="#">Hombres</a>
+                                <ul class="dropdown-menu bg-black">
+                                    <li>
+                                        <a class="listas dropdown-item" href="Index-Catalogo-THombre.html">Calzado</a>
+                                    </li>
+                                    <li>
+                                        <a class="listas dropdown-item" href="index-Catalogo-RHombre.html">Ropa</a>
+                                    </li>
+                                    <li>
+                                        <a class="listas dropdown-item" href="index-Catalogo-AHombres.html">Accesorios</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" href="#">Mujeres</a>
+                                <ul class="dropdown-menu bg-black">
+                                    <li>
+                                        <a class="listas dropdown-item" href="Index-Catalogo-TMujeres.html">Calzado</a>
+                                    </li>
+                                    <li>
+                                        <a class="listas dropdown-item" href="Index-Catalogo-RMujeres.html">Ropa</a>
+                                    </li>
+                                    <li>
+                                        <a class="listas dropdown-item" href="Index-Catalogo-AMujeres.html">Accesorios</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" href="#">Niñ@s</a>
+                                <ul class="dropdown-menu bg-black">
+                                    <li>
+                                        <a class="listas dropdown-item" href="index-Catalogo-TNiños.html">Calzado</a>
+                                    </li>
+                                    <li>
+                                        <a class="listas dropdown-item" href="Index-Catalogo-RNiños.html">Ropa</a>
+                                    </li>
+                                    <li>
+                                        <a class="listas dropdown-item" href="index-Catalogo-ANiños.html">Accesorios</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" href="#">Todo</a>
+                                <ul class="dropdown-menu bg-black">
+                                    <li>
+                                        <a class="listas dropdown-item" href="Index-Catalogo-TodosC.html">Calzado</a>
+                                    </li>
+                                    <li>
+                                        <a class="listas dropdown-item" href="Index-Catalogo-TodosR.html">Ropa</a>
+                                    </li>
+                                    <li>
+                                        <a class="listas dropdown-item" href="Index-Catalogo-TodosA.html">Accesorios</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                        <hr class="text-white-50">
+                        <div class="botonesInicialesMobil text-center col-12 d-block d-md-none logged-out">
+                            <a href="/Registro.html" class="logged-out">
+                                <button>Únete</button>
+                        </a>
+                        <a href="/InicioSesion.html" class="logged-out">
+                                <button>Iniciar sesión</button>
+                            </a>
+                            <a href="#" class=" botonesIniciales text-end d-block d-md-none logged-in" id="logout2">
+                                <button class="logged-in">Cerrar sesión</button>
+                                </a>
+                        </div>
+                        <hr class="text-white-50">  
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+    <main class="contenedorMision">
+        <div class="encabezadoHistoria">
+            <h1>BIENVENIDO A NIKE, INC.</h1>
+        </div>
+
+        <video playsinline="playsinline" autoplay muted loop>
+            <source src="/video/Tour Nikes World Headquarters Campus.mp4">
+        </video>
+
+        <div class="textoDebajoVideo" align="center">
+            <p>NIKE, Inc. es un equipo compuesto por las marcas Nike, Jordan y Converse impulsadas por un propósito
+                compartido de dejar un impacto duradero.</p>
+        </div>
+
+        <div class="quienesSomos" align="left">
+            <h5>¿Quiénes somos?</h5>
+            <img src="/img/nike-inc-swoosh-jordan-converse-logos.jpg" alt="">
+        </div>
+
+        <div class="huella" align="center">
+            <p>Con una huella global, una cultura de innovación y una mentalidad de equipo primero, tomamos medidas para
+                crear un futuro de progreso continuo para los atletas, el deporte y nuestro mundo.</p>
+        </div>
+
+        <div class="row text-center">
+            <div class="liderazgo">
+                <h5>Liderazgo</h5>
+            </br>
+            </div>
+        
+            <div class="col-6 col-md-4 col-lg-4 col-sm-6 col-xs-6">
+                <div class="card">
+                    <a href="https://es.wikipedia.org/wiki/Phil_Knight">
+                    <img src="/img/Liderazgo/phil-knight.jpg">
+                    </a>
+                    <div class="contenido">
+                        <h3>Philip H.</h3>
+                        <p>Chairman Emeritus</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-6 col-md-4 col-lg-4 col-sm-6 col-xs-6">
+                <div class="card">
+                    <a href="https://en.wikipedia.org/wiki/Mark_Parker">
+                    <img src="/img/Liderazgo/mark-parker.jpg">
+                    </a>
+                    <div class="contenido">
+                        <h3>Mark Parker</h3>
+                        <p>Executive Chairman</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-4 col-sm-6 col-xs-6">
+                <div class="card">
+                    <a href="https://en.wikipedia.org/wiki/John_Donahoe">
+                    <img src="/img/Liderazgo/john-donahoe.jpg">
+                    </a>
+                    <div class="contenido">
+                        <h3>John Donahoe</h3>
+                        <p>President & CEO</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-4 col-sm-6 col-xs-6">
+                <div class="card">
+                    <a href="https://www.linkedin.com/in/andrew-campion-69069b4">
+                    <img src="/img/Liderazgo/andy-campion.jpg">
+                    </a>
+                    <div class="contenido">
+                        <h3>Andy Campion</h3>
+                        <p>Chief Operating Officer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-4 col-sm-6 col-xs-6">
+                <div class="card">
+                    <a href="https://www.linkedin.com/in/tom-clarke-b77b043">
+                    <img src="/img/Liderazgo/tom-clarke.jpg">
+                    </a>
+                    <div class="contenido">
+                        <h3>Tomas Clarke</h3>
+                        <p>President, Innovation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-4 col-sm-6 col-xs-6">
+                <div class="card">
+                    <a href="https://www.linkedin.com/in/matthew-friend-166a27a">
+                    <img src="/img/Liderazgo/matt-friend.jpg">
+                    </a>
+                    <div class="contenido">
+                        <h3>Matthew Friend</h3>
+                        <p>Chief Financial</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-4 col-sm-6 col-xs-6">
+                <div class="card">
+                    <a href="https://www.linkedin.com/in/mdotharris">
+                    <img src="/img/Liderazgo/melanie-harris.jpg">
+                    </a>
+                    <div class="contenido">
+                        <h3>Melanie Harris</h3>
+                        <p>Strategy & Development</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-4 col-sm-6 col-xs-6">
+                <div class="card">
+                    <a href="https://www.linkedin.com/in/monique-matheson?trk=public_profile_browsemap">
+                    <img src="/img/Liderazgo/mo-matheson.jpg">
+                    </a>
+                    <div class="contenido">
+                        <h3>Monique M.</h3>
+                        <p>Human Resources</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-4 col-sm-6 col-xs-6">
+                <div class="card">
+                    <a href="https://www.linkedin.com/in/ann-miller-80b8864">
+                    <img src="/img/Liderazgo/ann-miller.jpg">
+                    </a>
+                    <div class="contenido">
+                        <h3>Ann Miller</h3>
+                        <p>Legal Officer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-4 col-sm-6 col-xs-6">
+                <div class="card">
+                    <a href="https://www.linkedin.com/in/heidi-o-neill-6616b04">
+                    <img src="/img/Liderazgo/heidi-oneill.jpg">
+                    </a>
+                    <div class="contenido">
+                        <h3>Heidi O'Neill</h3>
+                        <p>Marketplace</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="bg-light text-center text-lg-start">
+        <div class="container-fluid p-4">
+            <!--Grid row-->  
+<div class="row">
+
+        <div class="col-12 col-md-4 col-lg-3 mb-4 mb-md-0 d-flex align-items-center justify-content-center">
+            <a href="index.html">
+                <img src="/img/nikefooter.png" class="imgFooter">
+                </a>
+
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3 mb-4 mb-md-0 d-none d-md-block">
+                    <h4 class="mb-0">Acerca de Nike</h4>
+        <ul class="lista list-unstyled">
+        <li>
+            <a href="mision.html" class="text-dark">Mision</a>
+        </li>
+        <li>
+            <a href="vision.html" class="text-dark">Vision</a>
+        </li>
+        <li>
+            <a href="historia.html" class="text-dark">Historia</a>
+        </li>
+        <li>
+            <a href="tendencias.html" class="text-dark">Tendencias</a>
+        </li>
+        </ul>
+            </div>   
+            
+        <div class="accordion d-md-none" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Acerca de Nike  
+                    </button>
+                </h2>
+     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <ul class="lista list-unstyled">
+                    <li>
+                        <a href="mision.html" class="text-dark">Mision</a>
+                    </li>
+                    <li>
+                        <a href="vision.html" class="text-dark">Vision</a>
+                    </li>
+                    <li>
+                        <a href="historia.html" class="text-dark">Historia</a>
+                    </li>
+                    <li>
+                        <a href="tendencias.html" class="text-dark">Tendencias</a>
+                    </li>
+                    </ul>
+                    </div>
+                  </div>
+                </div>
+        </div>
+
+<div class="col-12 col-md-4 col-lg-3 mb-4 mb-md-0">
+                <h4 class="Redes">Redes Sociales</h4>
+                <div style="text-align:center;">
+            <li class="d-flex justify-content-between">
+                    <a href="https://www.instagram.com/nike/">
+                        <img src="/img/iconos/igIcon.png"style="max-width:50px">
+                    </a>
+                    <a href="https://www.facebook.com/nike/">
+                        <img src="/img/iconos/facebook.png"style="max-width:50px">
+                    </a>
+                    <a href="/enviarCorreo.html">
+                        <img src="/img/correo.png"style="max-width:50px">
+                    </a>
+                </div>
+            </li>
+</div>
+            <!--Grid column-->
+        
+    <!--Grid column-->
+        <div class="col-12 col-md-12 col-lg-3 mb-4 mb-md-0">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d475167.94165025715!2d-102.24234558827493!3d21.4979433707406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842b963652f411d9%3A0x76a17f63d9da68ae!2sNIKE%20FACTORY%20STORE%20LE%C3%93N!5e0!3m2!1ses-419!2smx!4v1667791167414!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+</div>
+    </footer>
+    <div class="segundoFooter">
+        <h6>@2022 Nike,Inc.Todos los derechos reservados</h6>
+    </div>
+    <script>
+        function busqueda(){
+            const buscar = document.getElementById('buscar').value;
+
+            switch(buscar){
+                case 'JORDAN':
+                    window.location.href='BusquedaJordan.html';
+                    break;
+                case 'AF1':
+                    window.location.href='BusquedaAf1.html';
+                    break;
+                case 'NIKE':
+                    window.location.href='BusquedaNike.html';
+                    break;
+                default:
+                    window.location.href='BusquedaAf1 copy.html';
+                    break;
+            }
+        }
+    </script>
+    <script src="/js/bootstrap.bundle.js"></script>
+    <script type="module" src="./logout.js"></script>
+</body>
+
+</html>

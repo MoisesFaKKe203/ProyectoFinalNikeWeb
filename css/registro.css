@@ -1,0 +1,52 @@
+body{
+    margin-top: 100px;
+    background-image: url(https://i.pinimg.com/564x/5c/95/0c/5c950c5437efdaf6aa169cd4cc8f41d3.jpg);
+    color:black;
+
+}
+h2{
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 25px ;
+}
+.fondo{
+    background-color:white;
+    padding: 50px;
+    margin-bottom: 100px;
+    max-width: 100%;
+    border-radius: 20px;
+    
+}
+
+
+.boton{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.boton button{
+    border: 100;
+    border-radius: 50px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 50%;
+    height:50px;
+    font-weight: bold;
+}
+
+.boton button:hover{
+    background-color: yellow;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+.row  a {
+    color: black;
+}
+

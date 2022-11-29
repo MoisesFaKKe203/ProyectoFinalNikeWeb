@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página web Braulio</title>
+    <!-- CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- CSS ESTILO-->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="/css/detalleProducto.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="crud" id="crud"></div>
+    <div class="botonesIniciales text-end d-none d-md-block logged-out">
+        <a href="/Registro.html" class="logged-out">
+                <button>Únete</button>
+        </a>
+        <a href="/InicioSesion.html" class="logged-out">
+                <button>Iniciar sesión</button>
+            </a>
+        <a href="#" class=" botonesIniciales text-end d-none d-md-block logged-in" id="logout">
+            <button class="logged-in">Cerrar sesión</button>
+            </a>
+        </div>
+        <header>
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/index.html">
+                        <img src="/img/nikeLogo.png" class="imgNav">
+                    </a>
+                    <div class="contenedorDerecha order-sm-0 order-md-1" id="enSesion">
+                        <!-- <div class="espacio">
+                        <ul class="navbar-nav text-light">
+                            <div class="buscar margen">
+                                <input type="text" class= "Buscar_texto">
+                                <a href="" class="button" style="float: right"><i class="bi bi-search lupa"></i></a>
+                            </div>
+                        </div>
+                            <div class="espacio enSesion" id="enSesionUser">
+                                <a class="nav-link enSesion" href="#">
+                                    <i class="iconosNav bi-person-fill enSesion" id="enSesion"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="espacio enSesion" id="enSesionCora">
+                             <div class="nav-item col-12 col-md-auto"> 
+                                 <a class="nav-link enSesion" href="#">
+                                    <i class="iconosNav bi-heart-fill enSesion" id="enSesion"></i>
+                                </a> 
+                            </div>
+                        </ul>
+                    </div> -->
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="menu">
+                        
+                        <ul class="menuP navbar-nav mx-auto">
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" href="#">Hombres</a>
+                                <ul class="dropdown-menu bg-black">
+                                    <li>
+                                        <a class="listas dropdown-item" href="Index-Catalogo-THombre.html">Calzado</a>
+                                    </li>
+                                    <li>
+                                        <a class="listas dropdown-item" href="index-Catalogo-RHombre.html">Ropa</a>
+                                    </li>
+                                    <li>
+                                        <a class="listas dropdown-item" href="index-Catalogo-AHombres.html">Accesorios</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" href="#">Mujeres</a>
+                                <ul class="dropdown-menu bg-black">
+                                    <li>
+                                        <a class="listas dropdown-item" href="Index-Catalogo-TMujeres.html">Calzado</a>
+                                    </li>
+                                    <li>
+                                        <a class="listas dropdown-item" href="Index-Catalogo-RMujeres.html">Ropa</a>
+                                    </li>
+                                    <li>
+                                        <a class="listas dropdown-item" href="Index-Catalogo-AMujeres.html">Accesorios</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" href="#">Niñ@s</a>
+                                <ul class="dropdown-menu bg-black">
+                                    <li>
+                                        <a class="listas dropdown-item" href="index-Catalogo-TNiños.html">Calzado</a>
+                                    </li>
+                                    <li>
+                                        <a class="listas dropdown-item" href="Index-Catalogo-RNiños.html">Ropa</a>
+                                    </li>
+                                    <li>
+                                        <a class="listas dropdown-item" href="index-Catalogo-ANiños.html">Accesorios</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" href="#">Todo</a>
+                                <ul class="dropdown-menu bg-black">
+                                    <li>
+                                        <a class="listas dropdown-item" href="Index-Catalogo-TodosC.html">Calzado</a>
+                                    </li>
+                                    <li>
+                                        <a class="listas dropdown-item" href="Index-Catalogo-TodosR.html">Ropa</a>
+                                    </li>
+                                    <li>
+                                        <a class="listas dropdown-item" href="Index-Catalogo-TodosA.html">Accesorios</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                        <hr class="text-white-50">
+                        <div class="botonesInicialesMobil text-center col-12 d-block d-md-none logged-out">
+                            <a href="/Registro.html" class="logged-out">
+                                <button>Únete</button>
+                        </a>
+                        <a href="/InicioSesion.html" class="logged-out">
+                                <button>Iniciar sesión</button>
+                            </a>
+                            <a href="#" class=" botonesIniciales text-end d-block d-md-none logged-in" id="logout2">
+                                <button class="logged-in">Cerrar sesión</button>
+                                </a>
+                        </div>
+                        <hr class="text-white-50">  
+                    </div>
+                </div>
+            </nav>
+        </header>
+    <main class="container">
+        <div>
+            <h2>Detalle del producto</h2>
+
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6 ">
+                <img src="/img/CatalogoNike/Mujeres/Calzado/Nike Air Force 1 High W.jpg" style="width:100%;">
+            </div>
+            <div class="col-12 col-lg-6 text-center">
+                <h3 style="color:white;">Nike Air Force 1 MID</h3>
+                <p class="DetalleP" style="color:white" style="font-family: Helvetica, sans-serif" align="left">
+                    El Air Force 1 Mid '07 es todo lo que conoces mejor: revestimientos nítidos, detalles audaces y la
+                    cantidad perfecta de destellos para que brille tu calzado. El cuello acolchado de corte alto con un
+                    clásico cierre por contacto aporta comodidad de básquetbol de un modo tradicional, mientras las
+                    perforaciones en la puntera te mantienen fresco.
+                </p>
+                <h5 class="seleccionTalla text-start" style="color:white ;">Selecciona tu talla</h5>
+                <div class="tallas">
+                    <button>CM 24</button>
+                    <button>CM 24.5</button>
+                    <button>CM 25</button>
+                </div>
+                <div class="tallas">
+                    <button>CM 25.5</button>
+                    <button>CM 26</button>
+                    <button>CM 26.5</button>
+                </div>
+                <div class="tallas">
+                    <button>CM 27</button>
+                    <button>CM 27.5</button>
+                    <button>CM 28</button>
+                </div>
+
+
+                <div class="Añadir">
+                    <a href="#listaDeseos">
+                    <button onclick="aparecer()" id="añadir">Añadir a la lista de deseos </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    
+    <div class="listaDeseos" id="listaDeseos">
+    
+</div>
+
+    <footer class="bg-light text-center text-lg-start">
+        <div class="container-fluid p-4">
+            <!--Grid row-->  
+<div class="row">
+
+        <div class="col-12 col-md-4 col-lg-3 mb-4 mb-md-0 d-flex align-items-center justify-content-center">
+            <a href="index.html">
+                <img src="/img/nikefooter.png" class="imgFooter">
+                </a>
+
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3 mb-4 mb-md-0 d-none d-md-block">
+                    <h4 class="mb-0">Acerca de Nike</h4>
+        <ul class="lista list-unstyled">
+        <li>
+            <a href="mision.html" class="text-dark">Mision</a>
+        </li>
+        <li>
+            <a href="vision.html" class="text-dark">Vision</a>
+        </li>
+        <li>
+            <a href="historia.html" class="text-dark">Historia</a>
+        </li>
+        <li>
+            <a href="tendencias.html" class="text-dark">Tendencias</a>
+        </li>
+        </ul>
+            </div>   
+            
+        <div class="accordion d-md-none" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Acerca de Nike  
+                    </button>
+                </h2>
+     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <ul class="lista list-unstyled">
+                    <li>
+                        <a href="mision.html" class="text-dark">Mision</a>
+                    </li>
+                    <li>
+                        <a href="vision.html" class="text-dark">Vision</a>
+                    </li>
+                    <li>
+                        <a href="historia.html" class="text-dark">Historia</a>
+                    </li>
+                    <li>
+                        <a href="tendencias.html" class="text-dark">Tendencias</a>
+                    </li>
+                    </ul>
+                    </div>
+                  </div>
+                </div>
+        </div>
+
+<div class="col-12 col-md-4 col-lg-3 mb-4 mb-md-0">
+                <h4 class="Redes">Redes Sociales</h4>
+                <div style="text-align:center;">
+            <li class="d-flex justify-content-between">
+                    <a href="https://www.instagram.com/nike/">
+                        <img src="/img/iconos/igIcon.png"style="max-width:50px">
+                    </a>
+                    <a href="https://www.facebook.com/nike/">
+                        <img src="/img/iconos/facebook.png"style="max-width:50px">
+                    </a>
+                    <a href="/enviarCorreo.html">
+                        <img src="/img/correo.png"style="max-width:50px">
+                    </a>
+                </div>
+            </li>
+</div>
+            <!--Grid column-->
+        
+    <!--Grid column-->
+        <div class="col-12 col-md-12 col-lg-3 mb-4 mb-md-0">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d475167.94165025715!2d-102.24234558827493!3d21.4979433707406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842b963652f411d9%3A0x76a17f63d9da68ae!2sNIKE%20FACTORY%20STORE%20LE%C3%93N!5e0!3m2!1ses-419!2smx!4v1667791167414!5m2!1ses-419!2smx" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+</div>
+    </footer>
+    <div class="segundoFooter">
+        <h6>@2022 Nike,Inc.Todos los derechos reservados</h6>
+    </div>
+    <script>
+        function busqueda(){
+            const buscar = document.getElementById('buscar').value;
+
+            switch(buscar){
+                case 'JORDAN':
+                    window.location.href='BusquedaJordan.html';
+                    break;
+                case 'AF1':
+                    window.location.href='BusquedaAf1.html';
+                    break;
+                case 'NIKE':
+                    window.location.href='BusquedaNike.html';
+                    break;
+                default:
+                    window.location.href='BusquedaAf1 copy.html';
+                    break;
+            }
+        }
+    </script>
+    <script src="/js/bootstrap.bundle.js"></script>
+    <script>
+        function aparecer(){
+    document.getElementById('listaDeseos').innerHTML=`<div class="tituloListDeseos" id="enSesionUser">
+    <h1>LISTA DE DESEOS</h1>
+</div>
+
+<!-- START SECTION SHOPPING CART -->
+<section class="shopping-cart" id="listaDeseos">
+<div class="container">
+    
+    <hr>
+    <div class="row">
+        <div class="col-4" >
+            <div class="shopping-cart-header">
+                <!-- <h6>Producto</h6> -->
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="shopping-cart-header">
+                <!-- <h6 class="">Descripción</h6> -->
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="shopping-cart-header">
+                <!-- <h6>Cantidad</h6> -->
+            </div>
+        </div>
+    </div>
+    <!-- ? START SHOPPING CART ITEMS -->
+    <div class="shopping-cart-items shoppingCartItemsContainer">
+        <div>
+        <div class="contenedorLista">
+            <div class="row shoppingCartItem">
+                  <div class="col-6">
+                      <div class="shopping-cart-item d-flex align-items-center h-100 border-bottom pb-2 pt-3">
+                          <img src="/img/CatalogoNike/Mujeres/Calzado/Nike Air Force 1 High W.jpg" class="shopping-cart-image">
+                          <h6 class="shopping-cart-item-title shoppingCartItemTitle text-truncate ml-3 mb-0">Nike Air Force 1 MID</h6>
+                      </div>
+                  </div>
+                  <div class="col-2">
+                      <div class="shopping-cart-price d-flex align-items-center h-100 border-bottom pb-2 pt-3">
+                          <p class="item-price mb-0 shoppingCartItemPrice">Costura nítida, detalles audaces</p>
+                      </div>
+                  </div>
+                  <div class="col-4">
+                      <div
+                          class="shopping-cart-quantity d-flex justify-content-between align-items-center h-100 border-bottom pb-2 pt-3">
+                          <input class="shopping-cart-quantity-input shoppingCartItemQuantity" type="number"
+                              value="1">
+                          <button class="btn btn-danger buttonDelete" type="button">X</button>
+                      </div>
+                  </div>
+              </div>
+              </div>
+            </div>
+    </div>
+    <!-- ? END SHOPPING CART ITEMS -->
+
+
+
+
+
+
+</div>
+
+</section>`
+}
+    </script>
+    <script type="module" src="./logout.js"></script>
+</body>
+
+</html>

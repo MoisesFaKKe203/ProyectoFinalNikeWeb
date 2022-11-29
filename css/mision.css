@@ -1,0 +1,270 @@
+.contenedorMision {
+    background-color: black;
+}
+
+video {
+    width: 100%;
+}
+
+.encabezadoMision {
+    width: 94%;
+    position: absolute;
+    display: flex;    
+}
+
+.encabezadoMision h3 {
+    color: white;
+}
+
+.contenedorDebajoVideo {
+    background-color: black;
+}
+
+.ultimoContenidoMision {
+    background-color: black;
+}
+
+.contenedorFinalMundial h1 {
+    color: white;
+}
+
+.contenedorFinalMundial {
+    background-color: black;
+}
+
+.videoFootbalverse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+
+
+/*Movil*/
+@media (max-width: 767px) {
+    .encabezadoMision h3 {
+        padding-left: 50px;
+        font-size: 20px;
+    }
+
+    .encabezadoMision p {
+        color: white;
+        font-family: Impact, sans-serif;
+        font-size:30px;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        padding-left: 50px;
+        padding-top: 25px;
+    }
+
+    .encabezadoMision .atleta {
+        font-family: Helvetica, sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 10px;
+        color: white;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        padding-left: 50px;
+        padding-top: 150px;
+    }
+    .contenedorDebajoVideo p {
+        margin-left: 17px;
+        font-family: Helvetica, sans-serif;
+        color: white;
+        font-size: 28px;
+        font-weight: bold;
+        line-height:60px;
+    }
+
+    .imagenMision {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+    }
+
+    .imagenMision img {
+        width: 95%;
+    }
+
+    .ultimoContenidoMision p {
+        margin-left: 17px;
+        font-family: Helvetica, sans-serif;
+        color: white;
+        font-size: 28px;
+        font-weight: bold;
+        line-height:60px;
+    }    
+
+    .imagenUltimoMision img {
+        width: 95%;
+    }
+
+    .imagenUltimoMision {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+    }
+
+    .videoFootbalverse {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
+
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 990px) {
+    .encabezadoMision h3 {
+        padding-left: 100px;
+    }
+
+    .encabezadoMision p {
+        color: white;
+        font-family: Impact, sans-serif;
+        font-size:72px;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        padding-left: 100px;
+        padding-top: 50px;
+    }
+
+    .encabezadoMision .atleta {
+        font-family: Helvetica, sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 30px;
+        color: white;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        padding-left: 100px;
+        padding-top: 360px;
+    }
+    .contenedorDebajoVideo p {
+        margin-right: 25px;
+        font-family: Helvetica, sans-serif;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        line-height:60px;
+    }
+
+    .imagenMision {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+    }
+
+    .imagenMision img {
+        margin-left:22px;
+    }
+
+    .ultimoContenidoMision p {
+        margin-left: 25px;
+        font-family: Helvetica, sans-serif;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        line-height:60px;
+    }
+
+    .imagenUltimoMision img {
+        margin-right:22px;
+    }
+
+    .imagenUltimoMision {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+    }
+
+}
+
+/*Escritorio*/
+@media (min-width: 991px){
+    .encabezadoMision h3 {
+        padding-left: 100px;
+    }
+
+    .encabezadoMision p {
+        color: white;
+        font-family: Impact, sans-serif;
+        font-size:100px;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        padding-left: 100px;
+        padding-top: 50px;
+    }
+
+    .encabezadoMision .atleta {
+        font-family: Helvetica, sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 30px;
+        color: white;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        padding-left: 100px;
+        padding-top: 500px;
+    }
+
+    .contenedorDebajoVideo p {
+        font-family: Helvetica, sans-serif;
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        line-height:60px;
+    }
+
+    .imagenMision {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+    }
+
+    .imagenMision img {
+        margin-left:22px;
+    }
+
+    .ultimoContenidoMision p {
+        margin-left: 25px;
+        font-family: Helvetica, sans-serif;
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        line-height:60px;
+    }
+
+    .imagenUltimoMision img {
+        margin-right:22px;
+    }
+
+    .imagenUltimoMision {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+    }
+}

@@ -1,0 +1,70 @@
+body{
+    margin-top: 100px;
+    background-color: black;
+    color:black;
+}
+h2{
+    color: black;
+}
+.fondo{
+    background-color:white;
+    padding: 50px;
+    margin-bottom: 100px;
+    max-width: 100%;
+    border-radius: 20px;
+
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.boton{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.boton button{
+    border: 100;
+    border-radius: 50px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 50%;
+    height:50px;
+    font-weight: bold;
+}
+
+.boton button:hover{
+    background-color: yellow;
+}
+
+.row a {
+    color: black;
+}
+
+.enviar {
+    margin-top: 30px;
+    border: 100;
+    border-radius: 50px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 50%;
+    height:50px;
+    font-weight: bold;
+}
+
+.enviar:hover{
+    background-color: yellow;
+}
+
+.botonEnviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

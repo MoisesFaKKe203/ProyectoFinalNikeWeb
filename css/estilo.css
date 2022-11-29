@@ -1,0 +1,376 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+body{
+    background-color: black;
+}
+
+
+
+.btn-inventary {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    color: green;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+.btn-inventary i {
+    color: green;
+}
+
+a:link{
+    text-decoration: none;
+    
+}
+
+/* FUENTES */
+h1, h2, h3, h4 {
+    font-family: Impact, sans-serif;
+    text-align: center;
+    margin-top: 2rem ;
+    color: black;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 400;
+    color: white;
+}
+p {
+    font-family: Helvetica, sans-serif;
+    font-size: 1rem;
+    margin-top: 2rem ;
+}
+
+img{
+    width: 100%;
+    margin-bottom: 30px;
+} 
+
+
+/* COLORES */
+
+a:link {
+    color:white;
+}
+
+a:hover, a:active, a.active{
+    color: yellow !important;
+}
+.bg-NegroOscuridad {
+    background-color: black;
+    color: white;
+}
+
+.txt-NegroOscuridad {
+    color: black;
+
+}
+.imgNav{
+    max-width:70px;
+}
+
+.navbar-brand img {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.iconosNav a:link i, .iconosNav a:visited i {
+    font-size: 1.5rem;
+    color: white !important;
+
+}
+
+.iconosNav {
+    font-size: 20px;
+}
+
+
+.iconosNav a:hover i, .iconosNav a:active i {
+    color:yellow !important;
+}
+
+.menuP{
+    font-size:large;
+}
+
+.nav-item {
+    font-family: Impact, sans-serif;
+}
+
+.nav-link {
+    color: white;
+}
+
+.buscarArticulos {
+    border-radius: 50px;
+    border:0;
+    width: 100px;
+    height: 25px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+.searchArticle {
+    position: relative;
+}
+
+.buscarArticulos::placeholder{
+    padding-left: 20px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.searchIco{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 9px;
+    top: 50%;
+    transform: translateY(-85%);
+}
+
+.derechaNav {
+    padding-right: 100px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-brand {
+    margin-left: 0px;
+}
+
+.unirse {
+    border-radius: 80px;
+    border: 0;
+    width:150px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.iniciarSesion {
+    border-radius: 80px;
+    border: 0;
+    width:150px;
+    margin-left: 25px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.contenedor {
+    background-color:black;
+    margin-left: 55px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contenedorDerecha {
+    background-color: black;
+    margin-right: 0px;
+    display:flex;
+    align-items:center;
+    text-align: right;
+    float: right;
+}
+
+.contenedorNav {
+    background-color: red;
+}
+
+
+.espacio {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.bcolor {
+    background-color: black;
+    border: 0ch;
+}
+
+.bcolor:hover{
+    color: yellow;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.buscar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%,-50%);
+    background-color: grey;
+    padding: 10px;
+    height: 40px;
+    border-radius: 20px;
+    /* margin-left: 510px; */
+    position: relative;
+    
+}
+
+.lupa {
+    top:5px !important;
+    right: 12px;
+    position: absolute;
+}
+
+.Buscar_texto{
+    border:none;
+    background: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    transition: 1s;
+    width: 0;
+    position: relative;
+}
+a:link{
+    text-decoration: none;
+}
+.button{
+    width: 20px;
+    height: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.margen{
+    margin-top: 40px;
+}
+
+.bordeIzq {
+    border-left: 1px solid #000;
+}
+
+/* /Responsive/ */
+
+@media screen and (max-width:760px){
+    .buscar:hover > .Buscar_texto{
+        width: 90px;
+        
+    }
+}
+
+@media screen and (min-width:768px){
+    .buscar:hover > .Buscar_texto{
+        width: 120px;
+
+    }
+}
+
+.imgFooter{
+    max-width: 150px;
+}
+.Redes h4{
+font-weight:bold;
+}
+.segundoFooter{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.lista{
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.botonesIniciales {
+    margin-top: 10px;
+    background-color: black;
+}
+
+.botonesIniciales button {
+    border-radius: 50px;
+    background-color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    border: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: 20px;
+}
+
+.botonesIniciales button:hover{
+    background-color: yellow;
+}
+
+.botonesInicialesMobil button:hover{
+    background-color: yellow;
+}
+
+.botonesInicialesMobil button {
+    border-radius: 50px;
+    background-color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    border: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: 10px;
+}
+
+.dropdown-item {
+    background-color: white;
+    color:black
+}
+
+.dropdown-item:hover{
+    background-color: gray;
+}
+
+.navbar-brand img {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.listas {
+    color:black;
+}
+
+.textoMobil {
+    color: white;
+}
+
+.dropdown-menu a{
+    color: black;
+}
+
+.audio {
+    background-image: url(/img/Banner3_Jordan1Taxi.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ///////////// */
+.cards-catalogo{
+    align-items: center;
+    margin-left: 210px;
+}
+
+.categorias{
+    margin-left: 0px;
+    color: white;
+}
+/* ///////////////////////// */

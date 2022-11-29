@@ -1,0 +1,13 @@
+h1, h5{
+    color: white;
+}
+
+.tendencias {
+    background-image: url(/img/fondoTendencias.jpg);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.tendencias p{
+    color: white;
+}
